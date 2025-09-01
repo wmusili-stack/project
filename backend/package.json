@@ -1,0 +1,33 @@
+{
+  "name": "skills-roadmap-generator",
+  "version": "1.0.0",
+  "description": "A beautiful, cottagecore-inspired skills roadmap generator with full-stack capabilities 🌿📚",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && live-server --port=3000",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install",
+    "build": "echo '🌱 Building for production...'",
+    "test": "echo '✨ Running tests...' && cd backend && npm test"
+  },
+  "keywords": [
+    "skills",
+    "learning",
+    "roadmap",
+    "education",
+    "fullstack",
+    "cottagecore",
+    "light-academia"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}

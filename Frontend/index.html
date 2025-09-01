@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Essential meta tags for responsive design and SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate personalized learning roadmaps for any skill - from technology to creative arts, business, and lifestyle skills.">
+    
+    <!-- Page title -->
+    <title>Skills Roadmap Generator</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preconnect to external resources for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Main container for centered content -->
+    <div class="container">
+        <!-- Page header -->
+        <header>
+            <h1 class="main-title">Skills Roadmap Generator</h1>
+            <p class="subtitle">Create your personalized learning path for any skill</p>
+        </header>
+
+        <!-- Main content area -->
+        <main>
+            <!-- Input form section -->
+            <form id="roadmap-form" class="roadmap-form">
+                
+                <!-- Known skill input section -->
+                <div class="input-section" id="known-skill-section">
+                    <h2 class="section-title">I already know a skill</h2>
+                    <p class="section-description">Enter a skill you want to build upon or advance</p>
+                    
+                    <div class="input-group">
+                        <label for="known-skill-input" class="input-label">Your existing skill:</label>
+                        <input 
+                            type="text" 
+                            id="known-skill-input" 
+                            name="knownSkill"
+                            class="text-input" 
+                            placeholder="e.g., Web Development, Photography, Marketing"
+                            aria-describedby="known-skill-help"
+                        >
+                        <small id="known-skill-help" class="input-help">
+                            Enter any skill you already have some experience with
+                        </small>
+                    </div>
+                </div>
+
+                <!-- OR separator -->
+                <div class="separator">
+                    <span class="separator-text">OR</span>
+                </div>
+
+                <!-- Interests input section -->
+                <div class="input-section" id="interests-section">
+                    <h2 class="section-title">I have interests I want to explore</h2>
+                    <p class="section-description">Tell us what interests you and we'll suggest matching skills</p>
+                    
+                    <div class="interests-container">
+                        <div class="input-group">
+                            <label for="interest-1-input" class="input-label">First interest:</label>
+                            <input 
+                                type="text" 
+                                id="interest-1-input" 
+                                name="interest1"
+                                class="text-input" 
+                                placeholder="e.g., art, technology, business"
+                                aria-describedby="interest-help"
+                            >
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="interest-2-input" class="input-label">Second interest:</label>
+                            <input 
+                                type="text" 
+                                id="interest-2-input" 
+                                name="interest2"
+                                class="text-input" 
+                                placeholder="e.g., problem-solving, creativity, people"
+                            >
+                        </div>
+                        
+                        <small id="interest-help" class="input-help">
+                            We'll find skills that combine your interests
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Generate button -->
+                <div class="button-container">
+                    <button type="submit" id="generate-btn" class="generate-button">
+                        <span class="button-text">Generate Roadmap</span>
+                        <span class="button-icon" aria-hidden="true">→</span>
+                    </button>
+                </div>
+            </form>
+
+            <!-- Output area for generated roadmap -->
+            <section id="roadmap-output" class="roadmap-output" aria-live="polite">
+                <!-- Generated roadmap content will appear here -->
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Skills Roadmap Generator - Your learning journey starts here</p>
+        </footer>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
